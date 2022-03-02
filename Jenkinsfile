@@ -35,7 +35,7 @@ pipeline {
                      post {
                         success {
                             archiveArtifacts "${env.BUILD_ID}/sources/dist/main"
-                            sh "docker run --rm -v ${VOLUME} ${IMAGE} rm -rf build dist"
+                            sh "docker run --rm -v ${VOLUME} ${IMAGE} 'rm -rf build dist'"
                          }
                      }
  
