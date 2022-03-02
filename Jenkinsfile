@@ -15,9 +15,9 @@ pipeline {
              
              steps {
     
-                sh 'python -m py_compile sources/main.py'
+                sh 'python -m py_compile src/main.py'
    
-                stash(name: 'compiled-results' , includes: 'sources/*.py*')
+                stash(name: 'compiled-results' , includes: 'src/*.py*')
              }
          }
        }
