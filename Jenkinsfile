@@ -31,7 +31,7 @@ pipeline {
                        steps {
 
 
-                         .sh 'py.test --verbose --junit-xml test-reports/results.xml src/main.py'
+                         sh 'py.test --verbose --junit-xml test-reports/results.xml src/main.py'
 
                        }
                       post {
