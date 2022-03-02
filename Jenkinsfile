@@ -1,4 +1,4 @@
-pipeline
+pipeline {
 
 
     agent none
@@ -21,5 +21,5 @@ pipeline
              }
          }
        }
-     
-
+    } 
+    
